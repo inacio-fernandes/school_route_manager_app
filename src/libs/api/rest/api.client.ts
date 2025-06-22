@@ -8,3 +8,11 @@ export const httpClient = axios.create({
 		"Content-Type": "application/json",
 	},
 });
+
+export const api = {
+  driver: {
+    get: async (id: string) => {
+      return await httpClient.get(`/drivers/${id}`);
+    },
+  },
+};

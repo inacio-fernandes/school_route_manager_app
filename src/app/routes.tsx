@@ -4,6 +4,7 @@ import NotFoundPage from "@/shared/ui/NotFoundPage";
 import { Route, Routes, Navigate, Outlet } from "react-router-dom";
 import { Layout } from "@/shared/layouts";
 import DriverPage from "@/features/driver/ui/DriverPage";
+import DriverDetailsPage from "@/features/driver/ui/DriverDetailsPage";
 import StudentPage from "@/features/student/ui/StudentPage";
 import SchoolPage from "@/features/school/ui/SchoolPage";
 import MonitorPage from "@/features/monitor/ui/MonitorPage";
@@ -49,6 +50,7 @@ const AppRoutesComponent = () => {
 				<Route path={AppRoutes.STOPS} element={<StopPage />} />
 				<Route path={AppRoutes.ROUTES} element={<RoutePage />} />
 				<Route path={AppRoutes.GUARDIANS} element={<GuardianPage />} />
+        <Route path="/drivers/:id" element={<DriverDetailsPage />} />
 			</Route>
 
 			<Route path={AppRoutes.NOT_FOUND} element={<NotFoundPage />} />

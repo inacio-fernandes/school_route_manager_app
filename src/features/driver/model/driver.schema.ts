@@ -17,7 +17,7 @@ export const DriverSchema = z.object({
 	status: StatusSchema,
 	contact: z.object({
 		phone: z.string().optional(),
-		cellphone: z.string().optional(),
+		cellphone: z.string().nonempty("Telefone é obrigatório").optional(),
 		email: z.string().email("Email inválido").optional(),
 	}),
 	cnh: z.string(),
