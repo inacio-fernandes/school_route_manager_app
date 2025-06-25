@@ -12,10 +12,12 @@
 		"prepare": "chmod +x .husky/*"
 	},
 	"dependencies": {
-		"@mantine/core": "^7.17.4",
+		"@emotion/react": "^11.14.0",
+		"@emotion/styled": "^11.14.0",
+		"@mantine/core": "^8.1.1",
 		"@mantine/dates": "^7.17.4",
 		"@mantine/form": "^7.17.3",
-		"@mantine/hooks": "^7.17.4",
+		"@mantine/hooks": "^8.1.1",
 		"@mantine/notifications": "^7.17.4",
 		"axios": "^1.10.0",
 		"clsx": "^2.1.1",
